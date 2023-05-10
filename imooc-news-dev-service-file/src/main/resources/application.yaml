@@ -1,0 +1,16 @@
+server:
+  tomcat:
+    uri-encoding: utf-8
+    max-swallow-size: -1
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-files
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB

@@ -1,0 +1,21 @@
+website:
+  domain-name: imoocnews.com
+server:
+  tomcat:
+    uri-encoding: utf-8
+    max-swallow-size: -1
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-user
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.imooc.pojo
+# 分页插件配置
+pagehelper:
+  helper-dialect: mysql
+  support-methods-arguments: true

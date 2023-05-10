@@ -1,0 +1,460 @@
+2023-05-09 09:05:54.603 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 09:05:54.683 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 15692 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 09:05:54.684 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 09:05:55.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 09:05:55.774 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 09:05:55.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2023-05-09 09:05:56.436 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 09:05:56.442 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:05:56.442 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 09:05:56.443 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 09:05:56.531 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 09:05:56.531 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1785 ms
+2023-05-09 09:05:57.885 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:05:58.206 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 09:05:58.216 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 09:05:58.223 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 09:05:58.353 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:05:58.375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 09:05:58.379 [main] INFO  com.imooc.user.Application - Started Application in 4.37 seconds (JVM running for 5.15)
+2023-05-09 09:09:47.445 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:09:49.361 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 09:09:49.452 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 15803 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 09:09:49.453 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 09:09:50.453 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 09:09:50.455 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 09:09:50.490 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2023-05-09 09:09:51.041 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 09:09:51.047 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:09:51.048 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 09:09:51.048 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 09:09:51.132 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 09:09:51.132 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1596 ms
+2023-05-09 09:09:52.441 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:09:52.747 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 09:09:52.756 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 09:09:52.763 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 09:09:52.894 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:09:52.918 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 09:09:52.922 [main] INFO  com.imooc.user.Application - Started Application in 4.059 seconds (JVM running for 4.619)
+2023-05-09 09:20:53.228 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 09:20:53.229 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 09:20:53.250 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2023-05-09 09:21:44.877 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:21:50.400 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 09:21:50.439 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 16042 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 09:21:50.440 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 09:21:51.478 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 09:21:51.480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 09:21:51.522 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2023-05-09 09:21:52.110 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 09:21:52.116 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:21:52.117 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 09:21:52.117 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 09:21:52.198 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 09:21:52.198 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1707 ms
+2023-05-09 09:21:53.447 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:21:53.718 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 09:21:53.727 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 09:21:53.734 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 09:21:53.858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:21:53.880 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 09:21:53.883 [main] INFO  com.imooc.user.Application - Started Application in 4.098 seconds (JVM running for 4.798)
+2023-05-09 09:21:58.273 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 09:21:58.274 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 09:21:58.291 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2023-05-09 09:21:58.433 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 09:21:58.436 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 09:32:03.429 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:32:08.573 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 09:32:08.694 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 16259 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 09:32:08.696 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 09:32:09.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 09:32:09.741 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 09:32:09.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2023-05-09 09:32:10.390 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 09:32:10.397 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:32:10.398 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 09:32:10.398 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 09:32:10.483 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 09:32:10.483 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1724 ms
+2023-05-09 09:32:11.787 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:32:12.087 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 09:32:12.096 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 09:32:12.103 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 09:32:12.222 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:32:12.245 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 09:32:12.249 [main] INFO  com.imooc.user.Application - Started Application in 4.199 seconds (JVM running for 4.785)
+2023-05-09 09:32:55.160 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:33:00.447 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 09:33:00.549 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 16277 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 09:33:00.550 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 09:33:01.595 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 09:33:01.597 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 09:33:01.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2023-05-09 09:33:02.223 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 09:33:02.231 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:33:02.232 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 09:33:02.232 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 09:33:02.320 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 09:33:02.320 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1681 ms
+2023-05-09 09:33:03.677 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 09:33:04.183 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 09:33:04.193 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 09:33:04.201 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 09:33:04.337 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 09:33:04.362 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 09:33:04.366 [main] INFO  com.imooc.user.Application - Started Application in 4.427 seconds (JVM running for 4.973)
+2023-05-09 09:33:06.417 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 09:33:06.418 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 09:33:06.437 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2023-05-09 09:33:06.560 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 09:33:06.562 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 11:41:22.804 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 11:41:26.089 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 11:41:26.135 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 18660 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 11:41:26.136 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 11:41:27.687 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 11:41:27.689 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 11:41:27.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2023-05-09 11:41:28.425 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 11:41:28.433 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 11:41:28.433 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 11:41:28.433 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 11:41:28.518 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 11:41:28.518 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2179 ms
+2023-05-09 11:41:29.799 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 11:41:30.100 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 11:41:30.109 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 11:41:30.115 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 11:41:30.245 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 11:41:30.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 11:41:30.268 [main] INFO  com.imooc.user.Application - Started Application in 4.712 seconds (JVM running for 5.294)
+2023-05-09 11:46:49.428 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 11:46:49.430 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 11:46:49.482 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 52 ms
+2023-05-09 11:46:49.625 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 11:46:49.629 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 11:47:02.693 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 11:47:03.417 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 11:49:10.376 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 11:49:10.381 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 11:49:10.403 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 11:49:12.833 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 11:49:12.861 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 18791 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 11:49:12.861 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 11:49:13.910 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 11:49:13.912 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 11:49:13.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2023-05-09 11:49:14.546 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 11:49:14.553 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 11:49:14.554 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 11:49:14.554 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 11:49:14.651 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 11:49:14.651 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1737 ms
+2023-05-09 11:49:15.989 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 11:49:16.299 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 11:49:16.308 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 11:49:16.315 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 11:49:16.480 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 11:49:16.506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 11:49:16.510 [main] INFO  com.imooc.user.Application - Started Application in 4.272 seconds (JVM running for 5.052)
+2023-05-09 11:49:28.042 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 11:49:28.043 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 11:49:28.068 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2023-05-09 11:49:28.187 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 11:49:28.190 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 11:49:40.824 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 11:49:41.341 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 13:07:51.578 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:07:51.583 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 13:07:51.600 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 13:07:54.165 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 13:07:54.193 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 19845 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 13:07:54.193 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 13:07:55.290 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 13:07:55.292 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 13:07:55.340 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2023-05-09 13:07:55.960 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 13:07:55.967 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:07:55.968 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 13:07:55.968 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 13:07:56.063 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 13:07:56.063 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1818 ms
+2023-05-09 13:07:57.376 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:07:57.707 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 13:07:57.717 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 13:07:57.724 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 13:07:57.884 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:07:57.908 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 13:07:57.912 [main] INFO  com.imooc.user.Application - Started Application in 4.339 seconds (JVM running for 5.115)
+2023-05-09 13:09:58.647 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 13:09:58.649 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 13:09:58.675 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2023-05-09 13:09:58.843 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 13:09:58.847 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 13:10:27.090 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 13:10:27.632 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 13:27:14.879 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:27:14.889 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 13:27:14.911 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 13:27:20.564 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 13:27:20.650 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 20171 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 13:27:20.651 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 13:27:21.704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 13:27:21.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 13:27:21.749 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2023-05-09 13:27:22.297 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 13:27:22.303 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:27:22.304 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 13:27:22.304 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 13:27:22.384 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 13:27:22.384 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1651 ms
+2023-05-09 13:27:23.661 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:27:23.990 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 13:27:23.998 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 13:27:24.006 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 13:27:24.164 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:27:24.188 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 13:27:24.191 [main] INFO  com.imooc.user.Application - Started Application in 4.126 seconds (JVM running for 4.688)
+2023-05-09 13:27:30.323 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 13:27:30.324 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 13:27:30.346 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2023-05-09 13:27:30.466 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 13:27:30.470 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 13:27:46.370 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 13:27:46.882 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 13:28:19.567 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:28:19.570 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 13:28:19.583 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 13:28:22.662 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 13:28:22.777 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 20198 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 13:28:22.779 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 13:28:23.812 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 13:28:23.814 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 13:28:23.858 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2023-05-09 13:28:24.471 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 13:28:24.478 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:28:24.478 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 13:28:24.479 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 13:28:24.563 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 13:28:24.563 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1726 ms
+2023-05-09 13:28:25.875 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 13:28:26.184 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 13:28:26.192 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 13:28:26.199 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 13:28:26.343 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 13:28:26.365 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 13:28:26.368 [main] INFO  com.imooc.user.Application - Started Application in 4.253 seconds (JVM running for 4.838)
+2023-05-09 13:28:46.171 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 13:28:46.173 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 13:28:46.197 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2023-05-09 13:28:46.326 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 13:28:46.329 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 13:28:57.287 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 13:28:57.799 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 14:01:21.166 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:01:21.169 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 14:01:21.184 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 14:01:23.375 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 14:01:23.477 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 20803 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 14:01:23.478 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 14:01:24.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 14:01:24.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 14:01:24.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2023-05-09 14:01:25.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 14:01:25.225 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:01:25.226 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 14:01:25.226 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 14:01:25.325 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 14:01:25.325 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1792 ms
+2023-05-09 14:01:26.619 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:01:26.944 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 14:01:26.953 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 14:01:26.961 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 14:01:27.137 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:01:27.161 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 14:01:27.164 [main] INFO  com.imooc.user.Application - Started Application in 4.288 seconds (JVM running for 4.922)
+2023-05-09 14:01:29.595 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 14:01:29.595 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 14:01:29.613 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2023-05-09 14:02:14.029 [http-nio-8003-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 14:02:14.032 [http-nio-8003-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 14:11:56.060 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:12:12.935 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 14:12:12.971 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 21005 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 14:12:12.972 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 14:12:14.152 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 14:12:14.155 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 14:12:14.200 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2023-05-09 14:12:14.842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 14:12:14.848 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:12:14.849 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 14:12:14.850 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 14:12:14.959 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 14:12:14.960 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1933 ms
+2023-05-09 14:12:16.295 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:12:16.644 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 14:12:16.654 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 14:12:16.662 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 14:12:16.841 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:12:16.866 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 14:12:16.870 [main] INFO  com.imooc.user.Application - Started Application in 4.557 seconds (JVM running for 5.287)
+2023-05-09 14:15:28.347 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:15:34.020 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 14:15:34.111 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 21065 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 14:15:34.112 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 14:15:35.199 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 14:15:35.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 14:15:35.243 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2023-05-09 14:15:35.846 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 14:15:35.853 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:15:35.853 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 14:15:35.854 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 14:15:35.941 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 14:15:35.941 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1771 ms
+2023-05-09 14:15:37.286 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:15:37.639 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 14:15:37.649 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 14:15:37.657 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 14:15:37.848 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:15:37.881 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 14:15:37.886 [main] INFO  com.imooc.user.Application - Started Application in 4.393 seconds (JVM running for 4.978)
+2023-05-09 14:15:41.701 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 14:15:41.702 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 14:15:41.723 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2023-05-09 14:15:41.951 [http-nio-8003-exec-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 14:15:41.955 [http-nio-8003-exec-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 14:16:26.652 [http-nio-8003-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 14:16:27.283 [http-nio-8003-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 14:19:32.807 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:19:32.813 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 14:19:32.841 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 14:19:40.088 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 14:19:40.191 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 21149 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 14:19:40.191 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 14:19:41.321 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 14:19:41.324 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 14:19:41.369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2023-05-09 14:19:42.013 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 14:19:42.020 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:19:42.020 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 14:19:42.021 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 14:19:42.105 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 14:19:42.105 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1854 ms
+2023-05-09 14:19:43.458 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:19:43.784 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 14:19:43.793 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 14:19:43.800 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 14:19:43.980 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:19:44.004 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 14:19:44.008 [main] INFO  com.imooc.user.Application - Started Application in 4.451 seconds (JVM running for 5.018)
+2023-05-09 14:19:48.313 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 14:19:48.314 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 14:19:48.342 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2023-05-09 14:19:48.550 [http-nio-8003-exec-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 14:19:48.553 [http-nio-8003-exec-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 14:22:52.642 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 14:22:53.294 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 14:27:19.451 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:27:19.455 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 14:27:19.475 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-09 14:27:22.524 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 14:27:22.623 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 21288 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 14:27:22.624 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 14:27:23.641 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 14:27:23.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 14:27:23.685 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2023-05-09 14:27:24.238 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 14:27:24.246 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:27:24.247 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 14:27:24.247 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 14:27:24.336 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 14:27:24.336 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1624 ms
+2023-05-09 14:27:25.604 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 14:27:25.935 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 14:27:25.944 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 14:27:25.951 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 14:27:26.137 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 14:27:26.164 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 14:27:26.168 [main] INFO  com.imooc.user.Application - Started Application in 4.14 seconds (JVM running for 4.708)
+2023-05-09 14:29:14.302 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 14:29:14.304 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 14:29:14.328 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2023-05-09 14:29:14.497 [http-nio-8003-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 14:29:14.499 [http-nio-8003-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 15:21:07.983 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 15:21:13.418 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 15:21:13.521 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 22265 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 15:21:13.521 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 15:21:14.583 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 15:21:14.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 15:21:14.630 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2023-05-09 15:21:15.528 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 15:21:15.536 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 15:21:15.537 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 15:21:15.537 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 15:21:15.728 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 15:21:15.729 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2151 ms
+2023-05-09 15:21:17.432 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 15:21:18.050 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 15:21:18.070 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 15:21:18.084 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 15:21:18.331 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 15:21:18.359 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 15:21:18.364 [main] INFO  com.imooc.user.Application - Started Application in 5.462 seconds (JVM running for 6.044)
+2023-05-09 15:32:38.962 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:20:50.018 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 16:20:50.111 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 23380 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 16:20:50.111 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 16:20:51.225 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 16:20:51.226 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 16:20:51.264 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2023-05-09 16:20:51.995 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 16:20:52.002 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 16:20:52.002 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 16:20:52.003 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 16:20:52.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 16:20:52.180 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2013 ms
+2023-05-09 16:20:53.617 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:20:54.095 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 16:20:54.109 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 16:20:54.119 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 16:20:54.309 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 16:20:54.333 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 16:20:54.337 [main] INFO  com.imooc.user.Application - Started Application in 4.879 seconds (JVM running for 5.434)
+2023-05-09 16:21:27.085 [http-nio-8003-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 16:21:27.087 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 16:21:27.135 [http-nio-8003-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 48 ms
+2023-05-09 16:21:27.287 [http-nio-8003-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 16:21:27.289 [http-nio-8003-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 16:25:16.611 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:25:19.895 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 16:25:19.947 [main] INFO  com.imooc.user.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 23486 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-user/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 16:25:19.947 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-09 16:25:21.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 16:25:21.066 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 16:25:21.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2023-05-09 16:25:21.848 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-09 16:25:21.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-09 16:25:21.855 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 16:25:21.856 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 16:25:22.041 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 16:25:22.042 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2038 ms
+2023-05-09 16:25:23.569 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:25:24.009 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 16:25:24.017 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 16:25:24.023 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 16:25:24.208 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-09 16:25:24.233 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-09 16:25:24.241 [main] INFO  com.imooc.user.Application - Started Application in 4.95 seconds (JVM running for 5.517)
+2023-05-09 16:26:08.083 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 16:26:08.084 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 16:26:08.134 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 49 ms
+2023-05-09 16:26:08.259 [http-nio-8003-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 16:26:08.261 [http-nio-8003-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 16:26:19.668 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-09 16:26:20.239 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-09 17:03:28.716 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 17:03:28.719 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-09 17:03:28.735 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.

@@ -1,0 +1,12 @@
+server:
+  port: 8004
+# MinIO配置
+minio:
+  # 服务端ip
+  endpoint: http://8.130.88.119:9000
+  # 图片bucket
+  bucket: imooc
+  # 访问用户名
+  access-key: minioadmin
+  # 访问密码
+  secret-key: minioadmin

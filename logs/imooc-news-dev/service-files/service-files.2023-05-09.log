@@ -1,0 +1,48 @@
+2023-05-09 15:46:42.027 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 15:46:42.043 [main] INFO  com.imooc.files.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 22778 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-file/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 15:46:42.043 [main] INFO  com.imooc.files.Application - The following profiles are active: dev
+2023-05-09 15:46:42.766 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 15:46:42.769 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 15:46:42.811 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2023-05-09 15:46:43.423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2023-05-09 15:46:43.429 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2023-05-09 15:46:43.430 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 15:46:43.430 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 15:46:43.515 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 15:46:43.515 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1424 ms
+2023-05-09 15:46:44.303 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 15:46:44.761 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2023-05-09 15:46:44.782 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2023-05-09 15:46:44.785 [main] INFO  com.imooc.files.Application - Started Application in 3.415 seconds (JVM running for 3.988)
+2023-05-09 16:21:59.180 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 16:21:59.181 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 16:21:59.197 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2023-05-09 16:25:22.135 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:25:26.868 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-09 16:25:26.962 [main] INFO  com.imooc.files.Application - Starting Application on qianzhikangMacBook-Pro.local with PID 23492 (/Users/qianzhikang/Code/imooc-news-dev/imooc-news-dev-service-file/target/classes started by qianzhikang in /Users/qianzhikang/Code/imooc-news-dev)
+2023-05-09 16:25:26.963 [main] INFO  com.imooc.files.Application - The following profiles are active: dev
+2023-05-09 16:25:27.974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 16:25:27.976 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-09 16:25:28.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2023-05-09 16:25:28.724 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2023-05-09 16:25:28.732 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2023-05-09 16:25:28.733 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-09 16:25:28.733 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-09 16:25:28.824 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-09 16:25:28.825 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1791 ms
+2023-05-09 16:25:30.284 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-09 16:25:30.620 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-09 16:25:30.638 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-09 16:25:30.648 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-09 16:25:30.793 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2023-05-09 16:25:30.819 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2023-05-09 16:25:30.823 [main] INFO  com.imooc.files.Application - Started Application in 4.467 seconds (JVM running for 5.012)
+2023-05-09 16:26:14.140 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 16:26:14.141 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-09 16:26:14.171 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 30 ms
+2023-05-09 16:26:14.326 [http-nio-8004-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-09 16:26:14.328 [http-nio-8004-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-09 16:26:14.480 [http-nio-8004-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.files.service.impl.UploadServiceImpl.uploadMinio====
+2023-05-09 16:26:14.838 [http-nio-8004-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：357
+2023-05-09 16:26:14.839 [http-nio-8004-exec-2] INFO  c.i.f.c.FileUploaderController - url = http://8.130.88.119:9000/imooc/file/6e02fd07-6759-43ce-9fc5-f14d9a4876181683620774503.JPG
+2023-05-09 17:03:28.744 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
