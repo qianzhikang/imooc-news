@@ -25,52 +25,52 @@ public interface FileUploaderControllerApi {
     GraceJSONResult uploadFace(@RequestParam String userId,
                                       MultipartFile file) throws Exception;
 
-    ///**
-    // * 上传多个文件
-    // * @param userId
-    // * @param files
-    // * @return
-    // * @throws Exception
-    // */
-    //@PostMapping("/uploadSomeFiles")
-    //public GraceJSONResult uploadSomeFiles(@RequestParam String userId,
-    //                                  MultipartFile[] files) throws Exception;
-    //
-    //
-    ///**
-    // * 文件上传到mongodb的gridfs中
-    // * @param newAdminBO
-    // * @return
-    // * @throws Exception
-    // */
-    //@PostMapping("/uploadToGridFS")
-    //public GraceJSONResult uploadToGridFS(@RequestBody NewAdminBO newAdminBO)
-    //        throws Exception;
-    //
-    ///**
-    // * 从gridfs中读取图片内容
-    // * @param faceId
-    // * @return
-    // * @throws Exception
-    // */
-    //@GetMapping("/readInGridFS")
-    //public void readInGridFS(String faceId,
-    //                                    HttpServletRequest request,
-    //                                    HttpServletResponse response)
-    //        throws Exception;
-    //
-    //
-    ///**
-    // * 从gridfs中读取图片内容，并且返回base64
-    // * @param faceId
-    // * @param request
-    // * @param response
-    // * @return
-    // * @throws Exception
-    // */
-    //@GetMapping("/readFace64InGridFS")
-    //public GraceJSONResult readFace64InGridFS(String faceId,
-    //                         HttpServletRequest request,
-    //                         HttpServletResponse response)
-    //        throws Exception;
+    /**
+     * 上传多个文件
+     * @param userId
+     * @param files
+     * @return
+     * @throws Exception
+     */
+    @PostMapping("/uploadSomeFiles")
+    GraceJSONResult uploadSomeFiles(@RequestParam String userId,
+                                      MultipartFile[] files) throws Exception;
+
+
+    /**
+     * 文件上传到mongodb的gridfs中
+     * @param newAdminBO
+     * @return
+     * @throws Exception
+     */
+    @PostMapping("/uploadToGridFS")
+    GraceJSONResult uploadToGridFS(@RequestBody NewAdminBO newAdminBO)
+            throws Exception;
+
+    /**
+     * 从gridfs中读取图片内容
+     * @param faceId
+     * @return
+     * @throws Exception
+     */
+    @GetMapping("/readInGridFS")
+    void readInGridFS(String faceId,
+                                        HttpServletRequest request,
+                                        HttpServletResponse response)
+            throws Exception;
+
+
+    /**
+     * 从gridfs中读取图片内容，并且返回base64
+     * @param faceId
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    @GetMapping("/readFace64InGridFS")
+    GraceJSONResult readFace64InGridFS(String faceId,
+                             HttpServletRequest request,
+                             HttpServletResponse response)
+            throws Exception;
 }

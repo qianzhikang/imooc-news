@@ -10,3 +10,8 @@ minio:
   access-key: minioadmin
   # 访问密码
   secret-key: minioadmin
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@8.130.88.119:27017
+      database: imooc-news

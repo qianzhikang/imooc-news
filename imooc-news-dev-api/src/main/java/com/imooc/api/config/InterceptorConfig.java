@@ -1,5 +1,6 @@
 package com.imooc.api.config;
 
+import com.imooc.api.controller.interceptor.AdminTokenInterceptor;
 import com.imooc.api.controller.interceptor.PassportInterceptor;
 import com.imooc.api.controller.interceptor.UserActiveInterceptor;
 import com.imooc.api.controller.interceptor.UserTokenInterceptor;
@@ -17,18 +18,23 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class InterceptorConfig implements WebMvcConfigurer {
 
     @Bean
-    public PassportInterceptor passportInterceptor(){
+    public PassportInterceptor passportInterceptor() {
         return new PassportInterceptor();
     }
 
     @Bean
-    public UserTokenInterceptor userTokenInterceptor(){
+    public UserTokenInterceptor userTokenInterceptor() {
         return new UserTokenInterceptor();
     }
 
     @Bean
-    public UserActiveInterceptor userActiveInterceptor(){
+    public UserActiveInterceptor userActiveInterceptor() {
         return new UserActiveInterceptor();
+    }
+
+    @Bean
+    public AdminTokenInterceptor adminTokenInterceptor() {
+        return new AdminTokenInterceptor();
     }
 
 
@@ -47,5 +53,17 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .addPathPatterns("/fs/uploadSomeFiles")
                 .addPathPatterns("/fans/follow")
                 .addPathPatterns("/fans/unfollow");
+
+        registry.addInterceptor(adminTokenInterceptor())
+                .addPathPatterns("/adminMng/adminIsExist")
+                .addPathPatterns("/adminMng/addNewAdmin")
+                .addPathPatterns("/adminMng/getAdminList")
+                .addPathPatterns("/fs/uploadToGridFS")
+                .addPathPatterns("/fs/readInGridFS")
+                .addPathPatterns("/friendLinkMng/saveOrUpdateFriendLink")
+                .addPathPatterns("/friendLinkMng/getFriendLinkList")
+                .addPathPatterns("/friendLinkMng/delete")
+                .addPathPatterns("/categoryMng/saveOrUpdateCategory")
+                .addPathPatterns("/categoryMng/getCatList");
     }
 }

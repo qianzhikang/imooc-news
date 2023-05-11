@@ -1,6 +1,10 @@
 server:
   port: 8005
 spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@8.130.88.119:27017
+      database: imooc-news
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
