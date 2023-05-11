@@ -1,106 +1,112 @@
-//package com.imooc.article.controller;
-//
-//import com.imooc.api.BaseController;
-//import com.imooc.api.controller.article.ArticlePortalControllerApi;
-//import com.imooc.article.service.ArticlePortalService;
-//import com.imooc.article.service.ArticleService;
-//import com.imooc.grace.result.GraceJSONResult;
-//import com.imooc.pojo.Article;
-//import com.imooc.pojo.vo.AppUserVO;
-//import com.imooc.pojo.vo.ArticleDetailVO;
-//import com.imooc.pojo.vo.IndexArticleVO;
-//import com.imooc.pojo.vo.PublisherVO;
-//import com.imooc.utils.IPUtil;
-//import com.imooc.utils.JsonUtils;
-//import com.imooc.utils.PagedGridResult;
-//import org.apache.commons.lang3.StringUtils;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-//import org.springframework.beans.BeanUtils;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.ResponseEntity;
-//import org.springframework.web.bind.annotation.RestController;
-//import org.springframework.web.client.RestTemplate;
-//
-//import javax.servlet.http.HttpServletRequest;
-//import java.util.ArrayList;
-//import java.util.HashSet;
-//import java.util.List;
-//import java.util.Set;
-//
-//@RestController
-//public class ArticlePortalController extends BaseController implements ArticlePortalControllerApi {
-//
-//    final static Logger logger = LoggerFactory.getLogger(ArticlePortalController.class);
-//
-//    @Autowired
-//    private ArticlePortalService articlePortalService;
-//
-//    @Autowired
-//    private RestTemplate restTemplate;
-//
-//    @Override
-//    public GraceJSONResult list(String keyword,
-//                                Integer category,
-//                                Integer page,
-//                                Integer pageSize) {
-//        if (page == null) {
-//            page = COMMON_START_PAGE;
+package com.imooc.article.controller;
+
+import com.imooc.api.controller.BaseController;
+import com.imooc.api.controller.article.ArticlePortalControllerApi;
+import com.imooc.article.service.ArticlePortalService;
+import com.imooc.article.service.ArticleService;
+import com.imooc.grace.result.GraceJSONResult;
+import com.imooc.pojo.Article;
+import com.imooc.utils.RedisOperator;
+import com.imooc.vo.AppUserVO;
+import com.imooc.vo.ArticleDetailVO;
+import com.imooc.vo.IndexArticleVO;
+import com.imooc.vo.PublisherVO;
+import com.imooc.utils.IPUtil;
+import com.imooc.utils.JsonUtils;
+import com.imooc.utils.PagedGridResult;
+import com.imooc.vo.AppUserVO;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+@RestController
+public class ArticlePortalController extends BaseController implements ArticlePortalControllerApi {
+
+    final static Logger logger = LoggerFactory.getLogger(ArticlePortalController.class);
+
+    @Resource
+    private RedisOperator redisOperator;
+
+    @Autowired
+    private ArticlePortalService articlePortalService;
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Override
+    public GraceJSONResult list(String keyword,
+                                Integer category,
+                                Integer page,
+                                Integer pageSize) {
+        if (page == null) {
+            page = COMMON_START_PAGE;
+        }
+
+        if (pageSize == null) {
+            pageSize = COMMON_PAGE_SIZE;
+        }
+
+        PagedGridResult gridResult
+                = articlePortalService.queryIndexArticleList(keyword,
+                                                            category,
+                                                            page,
+                                                            pageSize);
+// START
+
+        /*List<Article> list = (List<Article>)gridResult.getRows();
+
+        // 1. 构建发布者id列表
+        Set<String> idSet = new HashSet<>();
+        for (Article a : list) {
+//            System.out.println(a.getPublishUserId());
+            idSet.add(a.getPublishUserId());
+        }
+        System.out.println(idSet.toString());
+
+        // 2. 发起远程调用（restTemplate），请求用户服务获得用户（idSet 发布者）的列表
+        String userServerUrlExecute
+                = "http://user.imoocnews.com:8003/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
+        ResponseEntity<GraceJSONResult> responseEntity
+                = restTemplate.getForEntity(userServerUrlExecute, GraceJSONResult.class);
+        GraceJSONResult bodyResult = responseEntity.getBody();
+        List<AppUserVO> publisherList = null;
+        if (bodyResult.getStatus() == 200) {
+            String userJson = JsonUtils.objectToJson(bodyResult.getData());
+            publisherList = JsonUtils.jsonToList(userJson, AppUserVO.class);
+        }
+//        for (AppUserVO u : publisherList) {
+//            System.out.println(u.toString());
 //        }
-//
-//        if (pageSize == null) {
-//            pageSize = COMMON_PAGE_SIZE;
-//        }
-//
-//        PagedGridResult gridResult
-//                = articlePortalService.queryIndexArticleList(keyword,
-//                                                            category,
-//                                                            page,
-//                                                            pageSize);
-//// START
-//
-//        /*List<Article> list = (List<Article>)gridResult.getRows();
-//
-//        // 1. 构建发布者id列表
-//        Set<String> idSet = new HashSet<>();
-//        for (Article a : list) {
-////            System.out.println(a.getPublishUserId());
-//            idSet.add(a.getPublishUserId());
-//        }
-//        System.out.println(idSet.toString());
-//
-//        // 2. 发起远程调用（restTemplate），请求用户服务获得用户（idSet 发布者）的列表
-//        String userServerUrlExecute
-//                = "http://user.imoocnews.com:8003/user/queryByIds?userIds=" + JsonUtils.objectToJson(idSet);
-//        ResponseEntity<GraceJSONResult> responseEntity
-//                = restTemplate.getForEntity(userServerUrlExecute, GraceJSONResult.class);
-//        GraceJSONResult bodyResult = responseEntity.getBody();
-//        List<AppUserVO> publisherList = null;
-//        if (bodyResult.getStatus() == 200) {
-//            String userJson = JsonUtils.objectToJson(bodyResult.getData());
-//            publisherList = JsonUtils.jsonToList(userJson, AppUserVO.class);
-//        }
-////        for (AppUserVO u : publisherList) {
-////            System.out.println(u.toString());
-////        }
-//
-//        // 3. 拼接两个list，重组文章列表
-//        List<IndexArticleVO> indexArticleList = new ArrayList<>();
-//        for (Article a : list) {
-//            IndexArticleVO indexArticleVO = new IndexArticleVO();
-//            BeanUtils.copyProperties(a, indexArticleVO);
-//
-//            // 3.1 从publisherList中获得发布者的基本信息
-//            AppUserVO publisher  = getUserIfPublisher(a.getPublishUserId(), publisherList);
-//            indexArticleVO.setPublisherVO(publisher);
-//            indexArticleList.add(indexArticleVO);
-//        }
-//        gridResult.setRows(indexArticleList);*/
-//// END
+
+        // 3. 拼接两个list，重组文章列表
+        List<IndexArticleVO> indexArticleList = new ArrayList<>();
+        for (Article a : list) {
+            IndexArticleVO indexArticleVO = new IndexArticleVO();
+            BeanUtils.copyProperties(a, indexArticleVO);
+
+            // 3.1 从publisherList中获得发布者的基本信息
+            AppUserVO publisher  = getUserIfPublisher(a.getPublishUserId(), publisherList);
+            indexArticleVO.setPublisherVO(publisher);
+            indexArticleList.add(indexArticleVO);
+        }
+        gridResult.setRows(indexArticleList);*/
+// END
 //        gridResult = rebuildArticleGrid(gridResult);
-//        return GraceJSONResult.ok(gridResult);
-//    }
-//
+        return GraceJSONResult.ok(gridResult);
+    }
+
 //    private PagedGridResult rebuildArticleGrid(PagedGridResult gridResult) {
 //        // START
 //
@@ -118,7 +124,7 @@
 //        }
 //        System.out.println(idSet.toString());
 //        // 发起redis的mget批量查询api，获得对应的值
-//        List<String> readCountsRedisList = redis.mget(idList);
+//        List<String> readCountsRedisList = redisOperator.mget(idList);
 //
 //        // 2. 发起远程调用（restTemplate），请求用户服务获得用户（idSet 发布者）的列表
 ////        String userServerUrlExecute
@@ -260,4 +266,4 @@
 //        redis.increment(REDIS_ARTICLE_READ_COUNTS + ":" + articleId, 1);
 //        return GraceJSONResult.ok();
 //    }
-//}
+}

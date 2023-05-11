@@ -11,5 +11,5 @@ import java.util.List;
  * @Author qianzhikang
  */
 public interface FriendLinkRepository extends MongoRepository<FriendLinkMO,String> {
-    public List<FriendLinkMO> getAllByIsDelete(Integer isDelete);
+    List<FriendLinkMO> getAllByIsDelete(Integer isDelete);
 }
