@@ -16,30 +16,30 @@ public interface CommentControllerApi {
 
     @PostMapping("createComment")
     @ApiOperation(value = "用户评论", notes = "用户评论", httpMethod = "POST")
-    public GraceJSONResult createArticle(@RequestBody @Valid CommentReplyBO commentReplyBO,
+    GraceJSONResult createArticle(@RequestBody @Valid CommentReplyBO commentReplyBO,
                                          BindingResult result);
 
     @GetMapping("counts")
     @ApiOperation(value = "用户评论数查询", notes = "用户评论数查询", httpMethod = "GET")
-    public GraceJSONResult commentCounts(@RequestParam String articleId);
+    GraceJSONResult commentCounts(@RequestParam String articleId);
 
     @GetMapping("list")
     @ApiOperation(value = "查询文章的所有评论列表", notes = "查询文章的所有评论列表", httpMethod = "GET")
-    public GraceJSONResult list(@RequestParam String articleId,
+    GraceJSONResult list(@RequestParam String articleId,
                                 @RequestParam Integer page,
                                 @RequestParam Integer pageSize);
-
-    @PostMapping("mng")
-    @ApiOperation(value = "查询我的评论管理列表", notes = "查询我的评论管理列表", httpMethod = "POST")
-    public GraceJSONResult mng(@RequestParam String writerId,
-                               @ApiParam(name = "page", value = "查询下一页的第几页", required = false)
-                               @RequestParam Integer page,
-                               @ApiParam(name = "pageSize", value = "分页的每一页显示的条数", required = false)
-                               @RequestParam Integer pageSize);
-
-
-    @PostMapping("/delete")
-    @ApiOperation(value = "作者删除评论", notes = "作者删除评论", httpMethod = "POST")
-    public GraceJSONResult delete(@RequestParam String writerId,
-                                  @RequestParam String commentId);
+//
+//    @PostMapping("mng")
+//    @ApiOperation(value = "查询我的评论管理列表", notes = "查询我的评论管理列表", httpMethod = "POST")
+//    public GraceJSONResult mng(@RequestParam String writerId,
+//                               @ApiParam(name = "page", value = "查询下一页的第几页", required = false)
+//                               @RequestParam Integer page,
+//                               @ApiParam(name = "pageSize", value = "分页的每一页显示的条数", required = false)
+//                               @RequestParam Integer pageSize);
+//
+//
+//    @PostMapping("/delete")
+//    @ApiOperation(value = "作者删除评论", notes = "作者删除评论", httpMethod = "POST")
+//    public GraceJSONResult delete(@RequestParam String writerId,
+//                                  @RequestParam String commentId);
 }

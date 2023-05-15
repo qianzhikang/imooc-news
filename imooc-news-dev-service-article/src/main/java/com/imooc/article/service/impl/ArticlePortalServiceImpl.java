@@ -88,6 +88,7 @@ public class ArticlePortalServiceImpl extends ServiceImpl<ArticleMapper, Article
     public ArticleDetailVO queryDetail(String articleId) {
         Article article = getById(articleId);
         ArticleDetailVO articleDetailVO = BeanUtil.copyProperties(article, ArticleDetailVO.class);
+        articleDetailVO.setCover(article.getArticleCover());
         return articleDetailVO;
     }
 }

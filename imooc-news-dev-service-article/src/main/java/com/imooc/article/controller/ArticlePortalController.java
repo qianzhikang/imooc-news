@@ -3,7 +3,6 @@ package com.imooc.article.controller;
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.article.ArticlePortalControllerApi;
 import com.imooc.article.service.ArticlePortalService;
-import com.imooc.article.service.ArticleService;
 import com.imooc.grace.result.GraceJSONResult;
 import com.imooc.pojo.Article;
 import com.imooc.utils.RedisOperator;
@@ -63,7 +62,6 @@ public class ArticlePortalController extends BaseController implements ArticlePo
                                                             category,
                                                             page,
                                                             pageSize);
-// START
 
         List<Article> list = (List<Article>)gridResult.getRows();
 
@@ -80,7 +78,6 @@ public class ArticlePortalController extends BaseController implements ArticlePo
     }
 
     private PagedGridResult rebuildArticleGrid(PagedGridResult gridResult) {
-        // START
 
         List<Article> list = (List<Article>)gridResult.getRows();
 
