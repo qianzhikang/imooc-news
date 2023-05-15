@@ -128,34 +128,34 @@ public class UserController extends BaseController implements UserControllerApi 
         return GraceJSONResult.ok();
 
     }
-    //
-    //@Override
-    //public GraceJSONResult queryByIds(String userIds) {
-    //
-    //    if (StringUtils.isBlank(userIds)) {
-    //        return GraceJSONResult.errorCustom(ResponseStatusEnum.USER_NOT_EXIST_ERROR);
-    //    }
-    //
-    //    List<AppUserVO> publisherList = new ArrayList<>();
-    //    List<String> userIdList = JsonUtils.jsonToList(userIds, String.class);
-    //    for (String userId : userIdList) {
-    //        // 获得用户基本信息
-    //        AppUserVO userVO = getBasicUserInfo(userId);
-    //        // 添加到publisherList
-    //        publisherList.add(userVO);
-    //    }
-    //
-    //    return GraceJSONResult.ok(publisherList);
-    //}
-    //
-    //private AppUserVO getBasicUserInfo(String userId) {
-    //    // 1. 根据userId查询用户的信息
-    //    AppUser user = getUser(userId);
-    //
-    //    // 2. 返回用户信息
-    //    AppUserVO userVO = new AppUserVO();
-    //    BeanUtils.copyProperties(user, userVO);
-    //
-    //    return userVO;
-    //}
+
+    @Override
+    public GraceJSONResult queryByIds(String userIds) {
+
+        if (StringUtils.isBlank(userIds)) {
+            return GraceJSONResult.errorCustom(ResponseStatusEnum.USER_NOT_EXIST_ERROR);
+        }
+
+        List<AppUserVO> publisherList = new ArrayList<>();
+        List<String> userIdList = JsonUtils.jsonToList(userIds, String.class);
+        for (String userId : userIdList) {
+            // 获得用户基本信息
+            AppUserVO userVO = getBasicUserInfo(userId);
+            // 添加到publisherList
+            publisherList.add(userVO);
+        }
+
+        return GraceJSONResult.ok(publisherList);
+    }
+
+    private AppUserVO getBasicUserInfo(String userId) {
+        // 1. 根据userId查询用户的信息
+        AppUser user = getUser(userId);
+
+        // 2. 返回用户信息
+        AppUserVO userVO = new AppUserVO();
+        BeanUtils.copyProperties(user, userVO);
+
+        return userVO;
+    }
 }

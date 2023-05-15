@@ -65,7 +65,7 @@ public class ArticlePortalController extends BaseController implements ArticlePo
                                                             pageSize);
 // START
 
-        /*List<Article> list = (List<Article>)gridResult.getRows();
+        List<Article> list = (List<Article>)gridResult.getRows();
 
         // 1. 构建发布者id列表
         Set<String> idSet = new HashSet<>();
@@ -101,7 +101,7 @@ public class ArticlePortalController extends BaseController implements ArticlePo
             indexArticleVO.setPublisherVO(publisher);
             indexArticleList.add(indexArticleVO);
         }
-        gridResult.setRows(indexArticleList);*/
+        gridResult.setRows(indexArticleList);
 // END
 //        gridResult = rebuildArticleGrid(gridResult);
         return GraceJSONResult.ok(gridResult);
@@ -184,15 +184,15 @@ public class ArticlePortalController extends BaseController implements ArticlePo
 //        return gridResult;
 //    }
 //
-//    private AppUserVO getUserIfPublisher(String publisherId,
-//                                         List<AppUserVO> publisherList) {
-//        for (AppUserVO user : publisherList) {
-//            if (user.getId().equalsIgnoreCase(publisherId)) {
-//                return user;
-//            }
-//        }
-//        return null;
-//    }
+    private AppUserVO getUserIfPublisher(String publisherId,
+                                         List<AppUserVO> publisherList) {
+        for (AppUserVO user : publisherList) {
+            if (user.getId().equalsIgnoreCase(publisherId)) {
+                return user;
+            }
+        }
+        return null;
+    }
 //
 //    // 发起远程调用，获得用户的基本信息
 //    private List<AppUserVO> getPublisherList(Set idSet) {
@@ -209,10 +209,11 @@ public class ArticlePortalController extends BaseController implements ArticlePo
 //        return publisherList;
 //    }
 //
-//    @Override
-//    public GraceJSONResult hotList() {
-//        return GraceJSONResult.ok(articlePortalService.queryHotList());
-//    }
+    @Override
+    public GraceJSONResult hotList() {
+        List<Article> list = articlePortalService.query().list().subList(0,5);
+        return GraceJSONResult.ok(list);
+    }
 //
 //    @Override
 //    public GraceJSONResult queryArticleListOfWriter(String writerId, Integer page, Integer pageSize) {

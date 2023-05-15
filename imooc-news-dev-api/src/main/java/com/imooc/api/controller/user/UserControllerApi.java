@@ -29,8 +29,8 @@ public interface UserControllerApi {
                     @RequestBody @Valid UpdateUserInfoBO updateUserInfoBO,
                     BindingResult result);
 
-    //@ApiOperation(value = "根据用户的ids查询用户列表", notes = "根据用户的ids查询用户列表", httpMethod = "GET")
-    //@GetMapping("/queryByIds")
-    //public GraceJSONResult queryByIds(@RequestParam String userIds);
+    @ApiOperation(value = "根据用户的ids查询用户列表", notes = "根据用户的ids查询用户列表", httpMethod = "GET")
+    @GetMapping("/queryByIds")
+    GraceJSONResult queryByIds(@RequestParam String userIds);
 
 }
