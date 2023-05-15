@@ -2,7 +2,6 @@ package com.imooc.article.controller;
 
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.article.ArticleControllerApi;
-import com.imooc.api.controller.user.HelloControllerApi;
 import com.imooc.article.service.ArticleService;
 import com.imooc.bo.NewArticleBO;
 import com.imooc.enums.ArticleCoverType;

@@ -1,14 +1,11 @@
 package com.imooc.admin.controller;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.imooc.admin.service.AdminUserService;
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.admin.AdminMngControllerApi;
-import com.imooc.api.controller.user.HelloControllerApi;
 import com.imooc.bo.AdminLoginBO;
 import com.imooc.bo.NewAdminBO;
-import com.imooc.enums.FaceVerifyType;
 import com.imooc.exception.GraceException;
 import com.imooc.grace.result.GraceJSONResult;
 import com.imooc.grace.result.ResponseStatusEnum;
@@ -18,12 +15,10 @@ import com.imooc.utils.FaceVerifyUtils;
 import com.imooc.utils.PagedGridResult;
 import com.imooc.utils.RedisOperator;
 import org.apache.commons.lang3.StringUtils;
-import org.n3r.idworker.IdWorker;
 import org.n3r.idworker.Sid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.RestController;

@@ -3,7 +3,6 @@ package com.imooc.user.controller;
 import cn.hutool.core.bean.BeanUtil;
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.user.AppUserMngControllerApi;
-import com.imooc.api.controller.user.HelloControllerApi;
 import com.imooc.enums.UserStatus;
 import com.imooc.grace.result.GraceJSONResult;
 import com.imooc.grace.result.ResponseStatusEnum;
@@ -18,7 +17,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;

@@ -1,9 +1,6 @@
 package com.imooc.api.config;
 
-import com.imooc.api.controller.interceptor.AdminTokenInterceptor;
-import com.imooc.api.controller.interceptor.PassportInterceptor;
-import com.imooc.api.controller.interceptor.UserActiveInterceptor;
-import com.imooc.api.controller.interceptor.UserTokenInterceptor;
+import com.imooc.api.controller.interceptor.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -36,6 +33,10 @@ public class InterceptorConfig implements WebMvcConfigurer {
     public AdminTokenInterceptor adminTokenInterceptor() {
         return new AdminTokenInterceptor();
     }
+    @Bean
+    public ArticleReadInterceptor articleReadInterceptor() {
+        return new ArticleReadInterceptor();
+    }
 
 
     @Override
@@ -65,5 +66,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .addPathPatterns("/friendLinkMng/delete")
                 .addPathPatterns("/categoryMng/saveOrUpdateCategory")
                 .addPathPatterns("/categoryMng/getCatList");
+
+        registry.addInterceptor(articleReadInterceptor()).addPathPatterns("/portal/article/readArticle");
     }
 }

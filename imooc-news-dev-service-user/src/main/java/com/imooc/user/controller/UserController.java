@@ -3,7 +3,6 @@ package com.imooc.user.controller;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import com.imooc.api.controller.BaseController;
-import com.imooc.api.controller.user.HelloControllerApi;
 import com.imooc.api.controller.user.UserControllerApi;
 import com.imooc.bo.UpdateUserInfoBO;
 import com.imooc.enums.UserStatus;
@@ -20,9 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;

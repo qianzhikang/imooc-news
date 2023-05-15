@@ -1,6 +1,7 @@
 package com.imooc.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.imooc.enums.Sex;
 import com.imooc.pojo.Fans;
 
 /**
@@ -14,4 +15,15 @@ import com.imooc.pojo.Fans;
 */
 public interface FansService extends IService<Fans> {
 
+    boolean isMeFollowThisWriter(String writerId, String fanId);
+
+    void follow(String writerId, String fanId);
+
+    void unfollow(String writerId, String fanId);
+
+    Object queryMyFansList(String writerId, Integer page, Integer pageSize);
+
+    int queryFansCounts(String writerId, Sex man);
+
+    Object queryRegionRatioCounts(String writerId);
 }
