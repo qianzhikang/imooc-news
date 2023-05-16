@@ -7,24 +7,38 @@ import com.imooc.bo.NewArticleBO;
 import com.imooc.enums.ArticleCoverType;
 import com.imooc.enums.ArticleReviewStatus;
 import com.imooc.enums.YesOrNo;
+import com.imooc.exception.GraceException;
 import com.imooc.grace.result.GraceJSONResult;
 import com.imooc.grace.result.ResponseStatusEnum;
 import com.imooc.pojo.Category;
 import com.imooc.utils.JsonUtils;
 import com.imooc.utils.PagedGridResult;
 import com.imooc.utils.RedisOperator;
+import com.imooc.vo.AppUserVO;
+import com.imooc.vo.ArticleDetailVO;
+import com.mongodb.client.gridfs.GridFSBucket;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.bson.types.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
+import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
 
 @RestController
 public class ArticleController extends BaseController implements ArticleControllerApi {
@@ -36,6 +50,12 @@ public class ArticleController extends BaseController implements ArticleControll
 
     @Resource
     private RedisOperator redisOperator;
+
+    @Value("${freemarker.html.article}")
+    private String htmlTarget;
+
+    @Resource
+    private RestTemplate restTemplate;
 
     @Override
     public GraceJSONResult createArticle(@Valid NewArticleBO newArticleBO,
@@ -146,7 +166,33 @@ public class ArticleController extends BaseController implements ArticleControll
         // 保存到数据库，更改文章的状态为审核成功或者失败
         articleService.updateArticleStatus(articleId, pendingStatus);
 
+        if (pendingStatus.equals(ArticleReviewStatus.SUCCESS.type)){
+            // 审核成功，生成静态化页面
+            try {
+                // 将文件上传到mongo的文件数据库返回主健
+                String articleHTMLToGridFS = createArticleHTMLToGridFS(articleId);
+                // 将mongo中的文件id存入数据库
+                articleService.updateArticleToGridFS(articleId,articleHTMLToGridFS);
+                doDownloadArticleHTML(articleId,articleHTMLToGridFS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
         return GraceJSONResult.ok();
+    }
+
+    private void doDownloadArticleHTML(String articleId, String articleMongoId) {
+
+        String url =
+                "http://html.imoocnews.com:8002/article/html/download?articleId="
+                        + articleId +
+                        "&articleMongoId="
+                        + articleMongoId;
+        ResponseEntity<Integer> responseEntity = restTemplate.getForEntity(url, Integer.class);
+        int status = responseEntity.getBody();
+        if (status != HttpStatus.OK.value()) {
+            GraceException.display(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
+        }
     }
 
     @Override
@@ -159,5 +205,63 @@ public class ArticleController extends BaseController implements ArticleControll
     public GraceJSONResult withdraw(String userId, String articleId) {
         articleService.withdrawArticle(userId, articleId);
         return GraceJSONResult.ok();
+    }
+
+
+
+    @Resource
+    private GridFSBucket gridFSBucket;
+
+    // 文章生成HTML
+    public String createArticleHTMLToGridFS(String articleId) throws Exception {
+        Configuration cfg = new Configuration(Configuration.getVersion());
+        String classpath = this.getClass().getResource("/").getPath();
+        cfg.setDirectoryForTemplateLoading(new File(classpath + "templates"));
+
+        Template template = cfg.getTemplate("detail.ftl", "utf-8");
+
+        // 获得文章的详情数据
+        ArticleDetailVO detailVO = getArticleDetail(articleId);
+        Map<String, Object> map = new HashMap<>();
+        map.put("articleDetail", detailVO);
+
+        String htmlContent = FreeMarkerTemplateUtils.processTemplateIntoString(template, map);
+        InputStream inputStream = IOUtils.toInputStream(htmlContent);
+        ObjectId fileId = gridFSBucket.uploadFromStream(detailVO.getId() + ".html",inputStream);
+        return fileId.toString();
+    }
+
+
+    private void createHtml(String articleId) throws IOException, TemplateException {
+        // 配置freemarker的基本环境
+        Configuration configuration = new Configuration(Configuration.getVersion());
+        // 获取classpath的绝对路径
+        String classpath = this.getClass().getResource("/").getPath();
+        configuration.setDirectoryForTemplateLoading(new File(classpath + "templates"));
+        Template template = configuration.getTemplate("detail.ftl", "utf-8");
+        File file = new File(htmlTarget);
+        if (!file.exists()){
+            file.mkdirs();
+        }
+        Writer out = new FileWriter(htmlTarget + File.separator + articleId + ".html");
+        ArticleDetailVO articleDetail = getArticleDetail(articleId);
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("articleDetail",articleDetail);
+        template.process(map,out);
+        out.close();
+    }
+
+    public ArticleDetailVO getArticleDetail(String articleId ) {
+        String url
+                = "http://www.imoocnews.com:8001/portal/article/detail?articleId=" + articleId;
+        ResponseEntity<GraceJSONResult> responseEntity
+                = restTemplate.getForEntity(url, GraceJSONResult.class);
+        GraceJSONResult bodyResult = responseEntity.getBody();
+        ArticleDetailVO detail = null;
+        if (bodyResult.getStatus() == 200) {
+            String json = JsonUtils.objectToJson(bodyResult.getData());
+            detail = JsonUtils.jsonToPojo(json, ArticleDetailVO.class);
+        }
+        return detail;
     }
 }

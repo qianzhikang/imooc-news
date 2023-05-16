@@ -1,10 +1,12 @@
 package com.imooc.article.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.article.CommentControllerApi;
 import com.imooc.article.service.CommentsService;
 import com.imooc.bo.CommentReplyBO;
 import com.imooc.grace.result.GraceJSONResult;
+import com.imooc.pojo.Comments;
 import com.imooc.utils.PagedGridResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,23 +82,26 @@ public class CommentController extends BaseController implements CommentControll
         return GraceJSONResult.ok(gridResult);
     }
 
-    //@Override
-    //public GraceJSONResult mng(String writerId, Integer page, Integer pageSize) {
-    //
-    //    if (page == null) {
-    //        page = COMMON_START_PAGE;
-    //    }
-    //    if (pageSize == null) {
-    //        pageSize = COMMON_PAGE_SIZE;
-    //    }
-    //
-    //    PagedGridResult gridResult = commentPortalService.queryWriterCommentsMng(writerId, page, pageSize);
-    //    return GraceJSONResult.ok(gridResult);
-    //}
-    //
-    //@Override
-    //public GraceJSONResult delete(String writerId, String commentId) {
-    //    commentPortalService.deleteComment(writerId, commentId);
-    //    return GraceJSONResult.ok();
-    //}
+    @Override
+    public GraceJSONResult mng(String writerId, Integer page, Integer pageSize) {
+
+        if (page == null) {
+            page = COMMON_START_PAGE;
+        }
+        if (pageSize == null) {
+            pageSize = COMMON_PAGE_SIZE;
+        }
+
+        PagedGridResult gridResult = commentsService.queryWriterCommentsMng(writerId, page, pageSize);
+        return GraceJSONResult.ok(gridResult);
+    }
+
+    @Override
+    public GraceJSONResult delete(String writerId, String commentId) {
+        LambdaQueryWrapper<Comments> objectLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        objectLambdaQueryWrapper.eq(Comments::getWriterId,writerId);
+        objectLambdaQueryWrapper.eq(Comments::getId,commentId);
+        commentsService.remove(objectLambdaQueryWrapper);
+        return GraceJSONResult.ok();
+    }
 }

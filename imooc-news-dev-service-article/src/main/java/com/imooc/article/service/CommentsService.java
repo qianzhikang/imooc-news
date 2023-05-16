@@ -14,4 +14,6 @@ public interface CommentsService extends IService<Comments> {
     void createComment(String articleId, String fatherId, String content, String userId, String nickname,String commentUserFace);
 
     PagedGridResult queryArticleComments(String articleId, Integer page, Integer pageSize);
+
+    PagedGridResult queryWriterCommentsMng(String writerId, Integer page, Integer pageSize);
 }

@@ -190,6 +190,14 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         articleMapper.updateAppointToPublish();
     }
 
+    @Override
+    public void updateArticleToGridFS(String articleId, String articleHTMLToGridFS) {
+        Article article = new Article();
+        article.setId(articleId);
+        article.setMongoFileId(articleHTMLToGridFS);
+        updateById(article);
+    }
+
 
 }
 

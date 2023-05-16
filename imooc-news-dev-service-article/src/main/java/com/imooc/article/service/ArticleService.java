@@ -28,4 +28,6 @@ public interface ArticleService extends IService<Article> {
     void withdrawArticle(String userId, String articleId);
 
     void updateAppointToPublish();
+
+    void updateArticleToGridFS(String articleId, String articleHTMLToGridFS);
 }

@@ -15,6 +15,7 @@
         <module>imooc-news-dev-service-file</module>
         <module>imooc-news-dev-service-admin</module>
         <module>imooc-news-dev-service-article</module>
+        <module>imooc-news-dev-service-article-html</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -43,6 +44,7 @@
         <minio.version>1.27.2</minio.version>
         <slf4j.version>1.7.21</slf4j.version>
         <joda-time.version>2.10.6</joda-time.version>
+        <spring-boot-freemarker.version>2.2.5.RELEASE</spring-boot-freemarker.version>
     </properties>
 
     <!--
@@ -159,6 +161,13 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+
+            <!-- freemarker -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring-boot-freemarker.version}</version>
             </dependency>
 
         </dependencies>

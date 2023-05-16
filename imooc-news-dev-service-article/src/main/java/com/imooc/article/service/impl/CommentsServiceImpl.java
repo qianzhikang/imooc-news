@@ -75,8 +75,22 @@ public class CommentsServiceImpl extends ServiceImpl<CommentsMapper, Comments>
 
     @Override
     public PagedGridResult queryArticleComments(String articleId, Integer page, Integer pageSize) {
-        Page<Comments> pageParam = new Page<>(page,pageSize);
-        Page<CommentsVO> list = commentsMapper.queryByArticleId(pageParam,articleId);
+        Page<Comments> pageParam = new Page<>(page, pageSize);
+        Page<CommentsVO> list = commentsMapper.queryByArticleId(pageParam, articleId);
+        PagedGridResult result = new PagedGridResult();
+        result.setPage((int) (list.getCurrent()));
+        result.setRecords(list.getTotal());
+        result.setRows(list.getRecords());
+        result.setTotal(list.getSize());
+        return result;
+    }
+
+    @Override
+    public PagedGridResult queryWriterCommentsMng(String writerId, Integer page, Integer pageSize) {
+        LambdaQueryWrapper<Comments> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(Comments::getWriterId, writerId);
+        Page<Comments> pageParam = new Page<>(page, pageSize);
+        Page<Comments> list = page(pageParam, lambdaQueryWrapper);
         PagedGridResult result = new PagedGridResult();
         result.setPage((int) (list.getCurrent()));
         result.setRecords(list.getTotal());
