@@ -1,5 +1,6 @@
 package com.imooc.article.controller;
 
+import com.imooc.api.config.RabbitMQConfig;
 import com.imooc.api.controller.BaseController;
 import com.imooc.api.controller.article.ArticleControllerApi;
 import com.imooc.article.service.ArticleService;
@@ -25,6 +26,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bson.types.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -85,7 +87,7 @@ public class ArticleController extends BaseController implements ArticleControll
             List<Category> catList =
                     JsonUtils.jsonToList(allCatJson, Category.class);
             for (Category c : catList) {
-                if(c.getId().equals(newArticleBO.getCategoryId())) {
+                if (c.getId().equals(newArticleBO.getCategoryId())) {
                     temp = c;
                     break;
                 }
@@ -123,12 +125,12 @@ public class ArticleController extends BaseController implements ArticleControll
 
         // 查询我的列表，调用service
         PagedGridResult grid = articleService.queryMyArticleList(userId,
-                                            keyword,
-                                            status,
-                                            startDate,
-                                            endDate,
-                                            page,
-                                            pageSize);
+                keyword,
+                status,
+                startDate,
+                endDate,
+                page,
+                pageSize);
 
         return GraceJSONResult.ok(grid);
     }
@@ -166,20 +168,35 @@ public class ArticleController extends BaseController implements ArticleControll
         // 保存到数据库，更改文章的状态为审核成功或者失败
         articleService.updateArticleStatus(articleId, pendingStatus);
 
-        if (pendingStatus.equals(ArticleReviewStatus.SUCCESS.type)){
+        if (pendingStatus.equals(ArticleReviewStatus.SUCCESS.type)) {
             // 审核成功，生成静态化页面
             try {
                 // 将文件上传到mongo的文件数据库返回主健
                 String articleHTMLToGridFS = createArticleHTMLToGridFS(articleId);
                 // 将mongo中的文件id存入数据库
-                articleService.updateArticleToGridFS(articleId,articleHTMLToGridFS);
-                doDownloadArticleHTML(articleId,articleHTMLToGridFS);
+                articleService.updateArticleToGridFS(articleId, articleHTMLToGridFS);
+                // doDownloadArticleHTML(articleId, articleHTMLToGridFS);
+                // 通知消费者下载
+                doDownloadArticleHTMLByMQ(articleId, articleHTMLToGridFS);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
         return GraceJSONResult.ok();
     }
+
+
+    @Resource
+    private RabbitTemplate rabbitTemplate;
+
+    private void doDownloadArticleHTMLByMQ(String articleId, String articleMongoId) {
+        logger.warn("do MQ mongoId = {}",articleMongoId);
+        rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE_ARTICLE,
+                "article.download.do",
+                articleId + "," + articleMongoId);
+
+    }
+
 
     private void doDownloadArticleHTML(String articleId, String articleMongoId) {
 
@@ -208,7 +225,6 @@ public class ArticleController extends BaseController implements ArticleControll
     }
 
 
-
     @Resource
     private GridFSBucket gridFSBucket;
 
@@ -227,7 +243,7 @@ public class ArticleController extends BaseController implements ArticleControll
 
         String htmlContent = FreeMarkerTemplateUtils.processTemplateIntoString(template, map);
         InputStream inputStream = IOUtils.toInputStream(htmlContent);
-        ObjectId fileId = gridFSBucket.uploadFromStream(detailVO.getId() + ".html",inputStream);
+        ObjectId fileId = gridFSBucket.uploadFromStream(detailVO.getId() + ".html", inputStream);
         return fileId.toString();
     }
 
@@ -240,18 +256,18 @@ public class ArticleController extends BaseController implements ArticleControll
         configuration.setDirectoryForTemplateLoading(new File(classpath + "templates"));
         Template template = configuration.getTemplate("detail.ftl", "utf-8");
         File file = new File(htmlTarget);
-        if (!file.exists()){
+        if (!file.exists()) {
             file.mkdirs();
         }
         Writer out = new FileWriter(htmlTarget + File.separator + articleId + ".html");
         ArticleDetailVO articleDetail = getArticleDetail(articleId);
         HashMap<String, Object> map = new HashMap<>();
-        map.put("articleDetail",articleDetail);
-        template.process(map,out);
+        map.put("articleDetail", articleDetail);
+        template.process(map, out);
         out.close();
     }
 
-    public ArticleDetailVO getArticleDetail(String articleId ) {
+    public ArticleDetailVO getArticleDetail(String articleId) {
         String url
                 = "http://www.imoocnews.com:8001/portal/article/detail?articleId=" + articleId;
         ResponseEntity<GraceJSONResult> responseEntity

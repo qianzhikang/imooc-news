@@ -21,6 +21,17 @@ spring:
     database: 0
     host: 127.0.0.1
     password:
+  rabbitmq:
+    host: 8.130.88.119
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: imooc-news-dev
+  data:
+    mongodb:
+      uri: mongodb://root:root@8.130.88.119:27017
+      database: imooc-news
+
 
 mybatis-plus:
   configuration:

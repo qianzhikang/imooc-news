@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Date 2023-05-08-14-43
  * @Author qianzhikang
  */
-@SpringBootApplication(exclude = MongoAutoConfiguration.class)
+@SpringBootApplication
 @MapperScan(basePackages = "com.imooc.article.mapper")
 @ComponentScan(basePackages = {"com.imooc","org.n3r.idworker"})
 public class Application {

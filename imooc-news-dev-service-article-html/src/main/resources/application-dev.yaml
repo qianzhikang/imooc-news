@@ -10,3 +10,9 @@ spring:
     mongodb:
       uri: mongodb://root:root@8.130.88.119:27017
       database: imooc-news
+  rabbitmq:
+    host: 8.130.88.119
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: imooc-news-dev
