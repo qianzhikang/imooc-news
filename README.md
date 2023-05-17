@@ -1,6 +1,8 @@
 # 幕课新闻
 
-## 运行环境
+## 单体
+
+### 运行环境
 
 - apache-tomcat-9.0.74
 - mongodb
@@ -10,7 +12,7 @@
 - rabbitMQ
 - 云服务器
 
-## 目录说明
+### 目录说明
 
 ```
 imooc-news-dev-api       //api接口定义集合
@@ -24,7 +26,7 @@ imooc-news-dev-service-article-html //静态化文章服务
 imooc-news       // 前端页面包
 ```
 
-## Switch-host 本地域名配置
+### Switch-host 本地域名配置
 
 ```host
 192.168.6.121 www.imoocnews.com
@@ -36,15 +38,18 @@ imooc-news       // 前端页面包
 192.168.6.121 files.imoocnews.com
 ```
 
-## 部署运行
+### 部署运行
 
 1. 启动tomcat，修改为9090端口
 2. 将imooc-news复制入tomcat的webapp目录
 3. 启动tomcat
-4. 运行项目中五个Application启动类
-
-
+4. 创建`imooc-news-dev-common/src/main/resources/aliyun.properties`文件，配置阿里云的访问key和密钥
+5. 运行项目中五个Application启动类
 
 作家登陆：writer.imoocnews.com:9090/imooc-news/writer/passport.html
 
 管理登陆：admin.imoocnews.com:9090/imooc-news/admin/login.html
+
+## 微服务
+
+学习中..
