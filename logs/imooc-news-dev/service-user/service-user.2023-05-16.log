@@ -1,0 +1,108 @@
+2023-05-16 08:59:42.727 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-16 08:59:43.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 08:59:43.800 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-16 08:59:43.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 MongoDB repository interfaces.
+2023-05-16 08:59:43.856 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 08:59:43.856 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 08:59:43.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2023-05-16 08:59:44.192 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2446fba6-f703-3128-9c91-6cac6e58b573
+2023-05-16 08:59:44.914 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-16 08:59:44.920 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-16 08:59:44.921 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-16 08:59:44.921 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-16 08:59:45.006 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-16 08:59:45.006 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2242 ms
+2023-05-16 08:59:46.796 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 08:59:46.798 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 08:59:46.801 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 08:59:46.801 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 08:59:46.969 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 08:59:48.765 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-05-16 08:59:48.901 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-16 08:59:48.910 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-16 08:59:48.917 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-16 08:59:49.089 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryAllUsingPOST_1
+2023-05-16 08:59:49.153 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-16 08:59:49.184 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-16 08:59:50.192 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-05-16 08:59:50.195 [main] INFO  com.imooc.user.Application - Started Application in 10.559 seconds (JVM running for 11.274)
+2023-05-16 09:03:38.733 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 09:03:38.736 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-16 09:03:38.785 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 49 ms
+2023-05-16 09:03:39.194 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-16 09:03:39.199 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-16 09:03:39.411 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-16 09:03:39.744 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-16 09:10:50.981 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 09:10:50.995 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-16 09:10:51.027 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-16 09:11:04.965 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-16 09:11:05.415 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-16 09:11:06.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 09:11:06.392 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-16 09:11:06.420 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 MongoDB repository interfaces.
+2023-05-16 09:11:06.448 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 09:11:06.449 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 09:11:06.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2023-05-16 09:11:06.708 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2446fba6-f703-3128-9c91-6cac6e58b573
+2023-05-16 09:11:07.397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-16 09:11:07.403 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-16 09:11:07.403 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-16 09:11:07.403 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-16 09:11:07.479 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-16 09:11:07.480 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2040 ms
+2023-05-16 09:11:09.060 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 09:11:09.061 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 09:11:09.064 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 09:11:09.066 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 09:11:09.244 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 09:11:09.916 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-16 09:11:09.927 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-16 09:11:09.936 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-16 09:11:10.090 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryAllUsingPOST_1
+2023-05-16 09:11:10.152 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-16 09:11:10.181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-16 09:11:10.187 [main] INFO  com.imooc.user.Application - Started Application in 5.859 seconds (JVM running for 6.601)
+2023-05-16 09:16:47.003 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 09:16:47.005 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-16 09:16:47.059 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 54 ms
+2023-05-16 09:16:47.316 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-16 09:16:47.319 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-16 15:10:38.710 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 16:53:45.184 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-16 16:53:45.829 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2023-05-16 16:53:46.963 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 16:53:46.964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-16 16:53:47.000 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 MongoDB repository interfaces.
+2023-05-16 16:53:47.036 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 16:53:47.037 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 16:53:47.047 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2023-05-16 16:53:47.345 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=159734b2-3df8-3dc0-9ffc-fe274cc84dba
+2023-05-16 16:53:48.203 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2023-05-16 16:53:48.210 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2023-05-16 16:53:48.210 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-16 16:53:48.210 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-16 16:53:48.325 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-16 16:53:48.326 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2451 ms
+2023-05-16 16:53:50.629 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 16:53:50.631 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 16:53:50.635 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-16 16:53:50.638 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-16 16:53:50.847 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 16:53:51.934 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-16 16:53:51.943 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-16 16:53:51.951 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-16 16:53:52.127 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryAllUsingPOST_1
+2023-05-16 16:53:52.191 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2023-05-16 16:53:52.224 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2023-05-16 16:53:52.230 [main] INFO  com.imooc.user.Application - Started Application in 7.692 seconds (JVM running for 8.289)
+2023-05-16 16:57:10.953 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 16:57:10.955 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-16 16:57:11.007 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 52 ms
+2023-05-16 16:57:11.163 [http-nio-8003-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-16 16:57:11.167 [http-nio-8003-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-16 16:57:11.360 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-16 16:57:11.639 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-16 17:02:26.427 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 17:02:26.436 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-16 17:02:26.459 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.

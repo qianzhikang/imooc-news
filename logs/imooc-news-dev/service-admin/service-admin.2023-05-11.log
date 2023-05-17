@@ -1,0 +1,375 @@
+2023-05-11 08:30:04.527 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-11 08:30:04.945 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 08:30:05.953 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 08:30:05.956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 08:30:05.994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2023-05-11 08:30:06.266 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1986ca2f-9332-3fad-b9dc-0e469b42e34d
+2023-05-11 08:30:06.940 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 08:30:06.946 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 08:30:06.947 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 08:30:06.947 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 08:30:07.042 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 08:30:07.042 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2065 ms
+2023-05-11 08:30:08.765 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 08:30:08.767 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 08:30:08.772 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 08:30:08.772 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 08:30:08.964 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 08:30:10.362 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-05-11 08:30:10.574 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 08:30:10.588 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 08:30:10.597 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 08:30:10.845 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 08:30:10.875 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 08:30:11.883 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-05-11 08:30:11.906 [main] INFO  com.imooc.admin.Application - Started Application in 8.571 seconds (JVM running for 9.652)
+2023-05-11 08:31:46.501 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 08:31:46.503 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 08:31:46.549 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 46 ms
+2023-05-11 08:31:46.682 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 08:31:46.684 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 08:31:47.071 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-11 08:31:47.349 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-11 09:14:37.989 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 09:14:38.021 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-11 09:14:38.083 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-11 13:31:51.483 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 13:31:52.561 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:31:52.562 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 13:31:52.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 1 MongoDB repository interfaces.
+2023-05-11 13:31:52.694 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:31:52.695 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 13:31:52.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 13:31:52.707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2023-05-11 13:31:52.983 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=70fa5968-a775-3aad-ac23-c5849a628991
+2023-05-11 13:31:53.808 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 13:31:53.816 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:31:53.816 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 13:31:53.817 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 13:31:53.914 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 13:31:53.915 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2401 ms
+2023-05-11 13:31:55.508 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 13:31:55.732 [cluster-ClusterId{value='645c7dcbc264745989a8c306', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:36}] to 8.130.88.119:27017
+2023-05-11 13:31:55.779 [cluster-ClusterId{value='645c7dcbc264745989a8c306', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40483375}
+2023-05-11 13:31:56.803 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:31:56.803 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:31:56.807 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:31:56.807 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:31:57.193 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 13:31:57.817 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 13:31:57.831 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 13:31:57.839 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 13:31:58.334 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:31:58.379 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 13:31:58.385 [main] INFO  com.imooc.admin.Application - Started Application in 9.96 seconds (JVM running for 10.852)
+2023-05-11 13:32:06.297 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 13:32:06.299 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 13:32:06.352 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 53 ms
+2023-05-11 13:32:06.492 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 13:32:06.495 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 13:32:06.627 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:32:07.017 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:38}] to 8.130.88.119:27017
+2023-05-11 13:32:07.105 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：477
+2023-05-11 13:32:07.744 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:32:07.798 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：53
+2023-05-11 13:32:08.261 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:32:08.312 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：51
+2023-05-11 13:32:08.670 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:32:08.720 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：49
+2023-05-11 13:32:16.962 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2023-05-11 13:32:17.123 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：157
+2023-05-11 13:32:17.143 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:32:17.199 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：56
+2023-05-11 13:34:17.654 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 13:34:17.671 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:38}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 13:34:22.430 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 13:34:23.548 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:34:23.548 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 13:34:23.628 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 1 MongoDB repository interfaces.
+2023-05-11 13:34:23.666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:34:23.667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 13:34:23.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 13:34:23.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2023-05-11 13:34:23.972 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=70fa5968-a775-3aad-ac23-c5849a628991
+2023-05-11 13:34:24.728 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 13:34:24.735 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:34:24.736 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 13:34:24.736 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 13:34:24.827 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 13:34:24.828 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2361 ms
+2023-05-11 13:34:26.242 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 13:34:26.477 [cluster-ClusterId{value='645c7e6296aa737e0a6a0093', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:42}] to 8.130.88.119:27017
+2023-05-11 13:34:26.538 [cluster-ClusterId{value='645c7e6296aa737e0a6a0093', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=53459250}
+2023-05-11 13:34:27.370 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:34:27.372 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:34:27.375 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:34:27.375 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:34:27.694 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 13:34:28.268 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 13:34:28.278 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 13:34:28.285 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 13:34:28.740 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:34:28.776 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 13:34:28.781 [main] INFO  com.imooc.admin.Application - Started Application in 9.326 seconds (JVM running for 10.171)
+2023-05-11 13:35:21.385 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 13:35:21.387 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 13:35:21.443 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 56 ms
+2023-05-11 13:35:21.591 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 13:35:21.593 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 13:35:21.753 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:35:22.116 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:43}] to 8.130.88.119:27017
+2023-05-11 13:35:22.184 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：428
+2023-05-11 13:35:25.305 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2023-05-11 13:35:25.421 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：114
+2023-05-11 13:35:25.437 [http-nio-8005-exec-6] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:35:25.482 [http-nio-8005-exec-6] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：45
+2023-05-11 13:35:28.106 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:35:28.150 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：43
+2023-05-11 13:50:18.035 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 13:50:18.064 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:43}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 13:50:34.271 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-11 13:50:34.808 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 13:50:35.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:50:35.689 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 13:50:35.760 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68ms. Found 1 MongoDB repository interfaces.
+2023-05-11 13:50:35.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 13:50:35.795 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 13:50:35.804 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 13:50:35.804 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2023-05-11 13:50:36.050 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=eee67db0-d93a-3983-85a4-9f2c22728c4d
+2023-05-11 13:50:36.675 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 13:50:36.680 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:50:36.681 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 13:50:36.681 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 13:50:36.761 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 13:50:36.762 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1927 ms
+2023-05-11 13:50:38.271 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 13:50:38.478 [cluster-ClusterId{value='645c822e9d00a9340d78e497', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:45}] to 8.130.88.119:27017
+2023-05-11 13:50:38.525 [cluster-ClusterId{value='645c822e9d00a9340d78e497', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41008292}
+2023-05-11 13:50:39.153 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:50:39.153 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:50:39.156 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 13:50:39.156 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 13:50:39.311 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 13:50:39.823 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 13:50:39.833 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 13:50:39.840 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 13:50:40.149 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 13:50:40.179 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 13:50:40.188 [main] INFO  com.imooc.admin.Application - Started Application in 6.492 seconds (JVM running for 7.148)
+2023-05-11 13:50:56.218 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 13:50:56.220 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 13:50:56.266 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 46 ms
+2023-05-11 13:50:56.380 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 13:50:56.382 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 13:50:56.500 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:50:56.825 [http-nio-8005-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:46}] to 8.130.88.119:27017
+2023-05-11 13:50:56.953 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：451
+2023-05-11 13:50:57.345 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 13:50:57.392 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：46
+2023-05-11 13:51:01.120 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-11 13:51:01.424 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-11 14:22:01.984 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 14:22:02.006 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:46}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 14:22:02.012 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-11 14:22:02.029 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-11 14:23:19.181 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-11 14:23:19.872 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 14:23:20.913 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 14:23:20.914 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 14:23:21.015 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 1 MongoDB repository interfaces.
+2023-05-11 14:23:21.062 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 14:23:21.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 14:23:21.077 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 14:23:21.078 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2023-05-11 14:23:21.399 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4411ecdd-f162-3a07-9e52-e2d174d79129
+2023-05-11 14:23:22.161 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 14:23:22.169 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 14:23:22.169 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 14:23:22.170 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 14:23:22.263 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 14:23:22.263 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2363 ms
+2023-05-11 14:23:23.770 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 14:23:23.977 [cluster-ClusterId{value='645c89db055f8420642ae0c7', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:47}] to 8.130.88.119:27017
+2023-05-11 14:23:24.028 [cluster-ClusterId{value='645c89db055f8420642ae0c7', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=45357834}
+2023-05-11 14:23:24.763 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 14:23:24.763 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 14:23:24.767 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 14:23:24.767 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 14:23:24.921 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 14:23:25.489 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 14:23:25.502 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 14:23:25.510 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 14:23:25.873 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 14:23:25.906 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 14:23:25.912 [main] INFO  com.imooc.admin.Application - Started Application in 7.372 seconds (JVM running for 8.016)
+2023-05-11 14:48:55.636 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 14:48:55.638 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 14:48:55.693 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 54 ms
+2023-05-11 14:48:55.850 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 14:48:55.853 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 14:48:56.276 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-11 14:48:56.562 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-11 14:49:55.881 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 14:49:56.248 [http-nio-8005-exec-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:50}] to 8.130.88.119:27017
+2023-05-11 14:49:56.372 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：488
+2023-05-11 14:50:25.466 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 14:50:25.526 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：58
+2023-05-11 15:06:29.277 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 15:06:29.296 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:50}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 15:06:29.303 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-11 15:06:29.337 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-11 15:29:59.702 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-11 15:30:00.213 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 15:30:01.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 15:30:01.164 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 15:30:01.238 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71ms. Found 1 MongoDB repository interfaces.
+2023-05-11 15:30:01.277 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 15:30:01.278 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 15:30:01.288 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 15:30:01.288 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2023-05-11 15:30:01.583 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4411ecdd-f162-3a07-9e52-e2d174d79129
+2023-05-11 15:30:02.430 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 15:30:02.436 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 15:30:02.437 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 15:30:02.437 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 15:30:02.527 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 15:30:02.528 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2288 ms
+2023-05-11 15:30:04.110 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 15:30:04.283 [cluster-ClusterId{value='645c997cf9dee96f4a38b251', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:53}] to 8.130.88.119:27017
+2023-05-11 15:30:04.331 [cluster-ClusterId{value='645c997cf9dee96f4a38b251', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41965208}
+2023-05-11 15:30:05.144 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 15:30:05.145 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 15:30:05.148 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 15:30:05.149 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 15:30:05.317 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 15:30:05.756 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 15:30:05.765 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 15:30:05.773 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 15:30:06.154 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 15:30:06.195 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 15:30:06.206 [main] INFO  com.imooc.admin.Application - Started Application in 7.065 seconds (JVM running for 7.647)
+2023-05-11 15:30:53.657 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 15:30:53.659 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 15:30:53.715 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 55 ms
+2023-05-11 15:30:53.857 [http-nio-8005-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 15:30:53.858 [http-nio-8005-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 15:40:56.018 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 15:40:56.411 [http-nio-8005-exec-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:57}] to 8.130.88.119:27017
+2023-05-11 15:40:56.533 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：513
+2023-05-11 15:41:30.674 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 15:41:30.740 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：50
+2023-05-11 16:02:52.266 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:02:52.323 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：50
+2023-05-11 16:04:18.444 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:04:18.502 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：49
+2023-05-11 16:05:23.944 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:05:23.988 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：44
+2023-05-11 16:05:31.744 [http-nio-8005-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-11 16:05:32.059 [http-nio-8005-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-11 16:07:53.177 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:07:53.250 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：69
+2023-05-11 16:08:28.314 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:08:28.368 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：43
+2023-05-11 16:09:55.388 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 16:09:55.411 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:57}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 16:09:55.417 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-11 16:09:55.441 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
+2023-05-11 16:18:16.539 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2023-05-11 16:18:17.105 [main] INFO  com.imooc.admin.Application - The following profiles are active: dev
+2023-05-11 16:18:18.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 16:18:18.297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-05-11 16:18:18.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 225ms. Found 1 MongoDB repository interfaces.
+2023-05-11 16:18:18.561 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-11 16:18:18.562 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-11 16:18:18.580 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.admin.repository.FriendLinkRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2023-05-11 16:18:18.580 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2023-05-11 16:18:19.019 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4411ecdd-f162-3a07-9e52-e2d174d79129
+2023-05-11 16:18:20.010 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2023-05-11 16:18:20.017 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2023-05-11 16:18:20.018 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-11 16:18:20.018 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-05-11 16:18:20.154 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-11 16:18:20.156 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3012 ms
+2023-05-11 16:18:22.080 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[8.130.88.119:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-05-11 16:18:22.328 [cluster-ClusterId{value='645ca4ce26ab423215429d46', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:59}] to 8.130.88.119:27017
+2023-05-11 16:18:22.388 [cluster-ClusterId{value='645ca4ce26ab423215429d46', description='null'}-8.130.88.119:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=8.130.88.119:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 11]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54972292}
+2023-05-11 16:18:23.450 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 16:18:23.451 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 16:18:23.454 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-05-11 16:18:23.454 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-05-11 16:18:23.652 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 16:18:24.178 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2023-05-11 16:18:24.187 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-05-11 16:18:24.194 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2023-05-11 16:18:24.599 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2023-05-11 16:18:24.632 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2023-05-11 16:18:24.637 [main] INFO  com.imooc.admin.Application - Started Application in 8.756 seconds (JVM running for 9.398)
+2023-05-11 16:21:58.536 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 16:21:58.541 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-11 16:21:58.586 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 45 ms
+2023-05-11 16:21:58.685 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:21:58.787 [http-nio-8005-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2023-05-11 16:21:58.792 [http-nio-8005-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2023-05-11 16:21:59.136 [http-nio-8005-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:61}] to 8.130.88.119:27017
+2023-05-11 16:21:59.249 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：563
+2023-05-11 16:22:26.838 [http-nio-8005-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Starting...
+2023-05-11 16:22:27.136 [http-nio-8005-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Start completed.
+2023-05-11 16:22:30.939 [http-nio-8005-exec-6] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 16:22:30.990 [http-nio-8005-exec-6] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：49
+2023-05-11 16:22:39.530 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2023-05-11 16:22:39.598 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：66
+2023-05-11 16:22:39.653 [http-nio-8005-exec-10] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryAllFriendLinkList====
+2023-05-11 16:22:39.691 [http-nio-8005-exec-10] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：37
+2023-05-11 16:22:44.735 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:22:44.795 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：54
+2023-05-11 16:34:45.378 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:34:45.453 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：68
+2023-05-11 16:35:41.249 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:35:41.297 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：47
+2023-05-11 16:36:49.154 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:36:49.195 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：40
+2023-05-11 16:38:24.264 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:38:24.325 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：60
+2023-05-11 16:38:45.522 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:38:45.575 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：45
+2023-05-11 16:38:50.101 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:38:50.151 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：48
+2023-05-11 16:38:57.249 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:38:57.291 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：40
+2023-05-11 16:40:59.771 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:40:59.827 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：55
+2023-05-11 16:41:57.097 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:41:57.141 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：41
+2023-05-11 16:42:15.381 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:42:15.422 [http-nio-8005-exec-2] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：40
+2023-05-11 16:52:02.192 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:52:02.299 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：98
+2023-05-11 16:52:29.009 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:52:29.080 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：65
+2023-05-11 16:53:10.894 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:53:10.951 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：55
+2023-05-11 16:54:06.729 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:54:06.773 [http-nio-8005-exec-3] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：42
+2023-05-11 16:54:49.587 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:54:49.643 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：55
+2023-05-11 16:54:58.600 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:54:58.677 [http-nio-8005-exec-7] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：59
+2023-05-11 16:55:32.466 [http-nio-8005-exec-10] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:55:32.507 [http-nio-8005-exec-10] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：40
+2023-05-11 16:55:53.138 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:55:53.190 [http-nio-8005-exec-1] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：50
+2023-05-11 16:55:58.045 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:55:58.088 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：42
+2023-05-11 16:56:04.203 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:56:04.250 [http-nio-8005-exec-4] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：46
+2023-05-11 16:56:46.862 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:56:46.918 [http-nio-8005-exec-8] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：56
+2023-05-11 16:57:41.385 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:57:41.440 [http-nio-8005-exec-9] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：48
+2023-05-11 16:59:02.409 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - ==== 开始执行 class com.imooc.admin.service.impl.FriendLinkServiceImpl.queryPortalAllFriendLinkList====
+2023-05-11 16:59:02.463 [http-nio-8005-exec-5] INFO  c.imooc.api.aspect.ServiceLogAspect - 当前执行耗时：51
+2023-05-11 16:59:18.012 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 16:59:18.033 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:61}] to 8.130.88.119:27017 because the pool has been closed.
+2023-05-11 16:59:18.037 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown initiated...
+2023-05-11 16:59:18.051 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - DataSourceHikariCP - Shutdown completed.
