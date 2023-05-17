@@ -3,6 +3,7 @@ package com.imooc.article.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.imooc.api.config.RabbitMQDelayConfig;
 import com.imooc.article.mapper.ArticleMapper;
 import com.imooc.article.service.ArticleService;
 import com.imooc.bo.NewArticleBO;
@@ -18,6 +19,11 @@ import com.imooc.pojo.Category;
 import com.imooc.utils.PagedGridResult;
 import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageDeliveryMode;
+import org.springframework.amqp.core.MessagePostProcessor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -36,6 +42,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
     @Resource
     private ArticleMapper articleMapper;
+
+    @Resource
+    private RabbitTemplate rabbitTemplate;
 
     @Resource
     private Sid sid;
@@ -59,6 +68,34 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
         if (article.getIsAppoint().equals(ArticleAppointType.TIMING.type)) {
             article.setPublishTime(newArticleBO.getPublishTime());
+            // TODO: 2023/5/17 发送一条延迟消息到消息队列 通知进行文章定时发布
+            Date endDate = newArticleBO.getPublishTime();
+            Date startDate = new Date();
+
+
+            //int delayTimes = (int)(endDate.getTime() - startDate.getTime());
+            // FIXME: 为了测试方便，写死10s
+            int delayTimes = 10 * 1000;
+            MessagePostProcessor messagePostProcessor = new MessagePostProcessor() {
+                @Override
+                public Message postProcessMessage(Message message) throws AmqpException {
+                    // 设置消息的持久
+                    message.getMessageProperties()
+                            .setDeliveryMode(MessageDeliveryMode.PERSISTENT);
+                    // 设置消息延迟的时间，单位ms毫秒
+                    message.getMessageProperties()
+                            .setDelay(delayTimes);
+                    return message;
+                }
+            };
+            // 发送消息
+            rabbitTemplate.convertAndSend(
+                    RabbitMQDelayConfig.EXCHANGE_DELAY,
+                    "publish.delay.display",
+                    articleId,
+                    messagePostProcessor);
+            System.out.println("延迟消息-定时发布文章：" + new Date());
+
         } else if (article.getIsAppoint().equals(ArticleAppointType.IMMEDIATELY.type)) {
             article.setPublishTime(new Date());
         }
